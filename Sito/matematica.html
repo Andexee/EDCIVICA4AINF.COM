@@ -1,0 +1,134 @@
+<html lang="it">
+<head>
+<title>La sicurezza digitale: Spid in Italia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Barra -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="sito.html" class="w3-bar-item w3-button w3-padding-large w3-Indigo"><i class="fa fa-home w3-xxlarge"></i></a>
+    <a href="telecomunicazioni.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-xlarge">Lo SPID</a>
+    <a href="matematica.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-xlarge">SPID in Italia</a>
+    <a href="sistemi.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-xlarge">La PEC</a>
+    <a href="inglese.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-xlarge">Digital Footprint</a>
+	<a href="Chisiamo.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-xlarge">Chi siamo</a>
+  </div>
+
+  <!-- Barra mobile -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="telecomunicazioni.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Lo SPID</a>
+    <a href="matematica.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">SPID in Italia</a>
+    <a href="sistemi.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">La PEC</a>
+    <a href="inglese.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Digital Footprint</a>
+	<a href="Chisiamo.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-xlarge">Chi siamo</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-Indigo w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo w3-animate-right">Spid in Italia</h1>
+  <p class="w3-xlarge">Spid registrati in Italia</p>
+  
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content w3-animate-zoom ">
+    <h5>Di seguito sono riportati i dati che abbiamo analizzato relativi agli SPID erogati in Italia in relazione alla popolazione per ogni regione con allegati anche i relativi grafici,  è emersa questa situazione:</h5>
+	<img src="tabella_1.png">
+	<h5> In un'altra tabella abbiamo riportato i valori della media,moda,mediana,campo di variazione, Scarto Quadratico Medio e varianza</h5>
+	<img src="tabella_2.png">
+	
+	<h5>I dati sono stati riportati anche nei grafici: </h5> 
+	
+	<div class="w3-content w3-display-container">
+	
+  <div class="w3-display-container mySlides">
+  <img src="grafico_1.png" style="width:60%">
+  <div class="w3-display-bottomright w3-container w3-padding-16 w3-black">
+    A barre verticali
+  </div>
+</div>
+
+  <div class="w3-display-container mySlides">	
+  <img src="grafico_2.png" style="width:60%">
+  <div class="w3-display-bottomright w3-container w3-padding-16 w3-black">
+    Istogramma
+	</div>
+	</div>
+	
+  <div class="w3-display-container mySlides">
+  <img src="grafico_3.png" style="width:60%">
+  <div class="w3-display-bottomright w3-container w3-padding-16 w3-black">
+    A bandiera
+	</div>
+	</div>
+  <div class="w3-display-container mySlides">
+  <img src="grafico_4.png" style="width:60%">
+  <div class="w3-display-bottomright w3-container w3-padding-16 w3-black">
+    A barre orizzontali
+	</div>
+	</div>
+  
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+	
+   </div>
+
+  
+
+    <div class="w3-twothird">
+      
+  </div>
+</div>
+
+<div class="w3-container w3-Indigo w3-center  w3-padding-64">
+<div class="w3-container w3-Indigo w3-center  w3-padding-64">
+    <h1 class="w3-margin w3-xxlarge">Altro sulla sicurezza digitale:</h1>
+	<a href="telecomunicazioni.html" class="w3-btn w3-round-large w3-black w3-padding-large w3-large w3-margin-top"> Lo SPID </a>
+	<a href="matematica.html" class="w3-btn w3-round-large w3-black w3-padding-large w3-large w3-margin-top"> SPID in Italia </a>
+	<a href="sistemi.html" class="w3-btn w3-round-large w3-black w3-padding-large w3-large w3-margin-top"> La PEC </a>
+	<a href="inglese.html" class="w3-btn w3-round-large w3-black w3-padding-large w3-large w3-margin-top"> Risks of Digital Footprint </a>
+</div>
+
+
+ <center><p><a href="Chisiamo.html">4A INF</a></p></center>
+</footer>
+
+
+
+</body>
+</html>
